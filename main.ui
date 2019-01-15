@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PyMail</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="CaixadeMensagem">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="receMail">
+       <attribute name="title">
+        <string>Caixa de Mensagem</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QListView" name="listView"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Atualizar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="redMail">
+       <attribute name="title">
+        <string>Ler E-mail</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTextBrowser" name="textBrowser"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="sendMail">
+       <attribute name="title">
+        <string>Enviar E-mail</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>De:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Para:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_2"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Assunto:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_3"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Anexos</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>Cancelar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Enviar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionSair"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair_2"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionSobre"/>
+    <addaction name="actionSobre_Qt"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSair">
+   <property name="text">
+    <string>Configurações</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionSobre_Qt">
+   <property name="text">
+    <string>Sobre Qt</string>
+   </property>
+  </action>
+  <action name="actionSair_2">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
